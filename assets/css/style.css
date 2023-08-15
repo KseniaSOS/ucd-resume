@@ -14,20 +14,24 @@
     background-color: #ede8e8;
 }
 
-.ui-menu-color-home {
-    background-color: #AD97A9;
-}
-
-.ui-menu-color-resume {
-    background-color: #E1A0AF;
-}
-
-.ui-menu-color-contact {
+.bg-color-work-history {
     background-color: #FFAF9B;
 }
 
+.ui-menu-color-home {
+    background-color:#FFCE7D ;
+}
+
+.ui-menu-color-resume {
+    background-color: #FFAF9B;
+}
+
+.ui-menu-color-contact {
+    background-color: #E1A0AF;
+}
+
 .ui-menu-color-download {
-    background-color: #FFCE7D;
+    background-color: #AD97A9;
 }
 
 /* -------------------------------------Special paddings/margins/text */
@@ -57,12 +61,13 @@ h4 {
     display: table;
 }
 
-.section-colum {
+.section-column {
     display: table-cell;
     padding: 0 30px 30px;
     float: none;
 }
 
+.history-heading, 
 .section-heading {
     font-family: "Exo", sans-serif;
     font-weight: 300;
@@ -274,11 +279,59 @@ footer {
     position: absolute;
     left: 0px;
     font-weight: 400;
-    padding: 10px 12px 10px 10px;
+    padding: 15px 12px 10px 10px;
     color: #fafafa;
     background-color: rgba(25, 25, 25, 0.2);
 }
 
 .progress-section {
     margin: 40px 20px;
+}
+
+/* -----------------------------------------------Work history */
+
+.history-heading {
+    color: #fafafa;
+    margin-bottom: 50px;
+}
+
+.timeline-item {
+    padding: 4em 2em 0em 2em;
+    position: relative;
+    color: #fafafa;
+    border-left: 1px solid;
+}
+
+.timeline-item p {
+    padding: 0;
+    margin: 0;
+}
+
+.timeline-item:before {
+    content: attr(data-dates);
+    position: absolute;
+    left: 2.5em;
+    top: 3em;
+    display: block;
+    font-family: "Exo", sans-serif;
+    font-weight: 500;
+    font-size: 0.8em;
+    padding: 0;
+    margin: 0;
+}
+
+.timeline-item:after {
+    content: '';
+    position: absolute;
+    left: -6px;
+    top: 2.4em;
+    display: block;
+    width: 12px;
+    height: 12px;
+    border-radius: 12px;
+    background-color: #fafafa;
+}
+
+.history-items {
+    margin-bottom: 30px;
 }
